@@ -24,11 +24,10 @@ class OmniversefromscratchE4HelloExtension(omni.ext.IExt):
             with ui.VStack():
                 label = ui.Label("")
 
-
                 def on_click():
                     self._count += 2
                     label.text = f"count: {self._count}"
-
+                    
                 def on_reset():
                     self._count = 0
                     label.text = "default"
